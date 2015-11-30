@@ -37,10 +37,11 @@ function drawChildren(children){
 	$.childrenViews = views;
 	
 	//postLayout event does not work if the parents container also is listening to this event
-//	$.view.addEventListener('postlayout', sortChildren);
+	//$.view.addEventListener('postlayout', sortChildren);
 	
 	//TODO: This is a workaroung for the postlayout issues. Not a good practice, btw.
 	setTimeout(sortChildren, 200);
+	
 	
 }
 
