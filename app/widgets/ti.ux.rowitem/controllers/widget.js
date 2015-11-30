@@ -38,3 +38,10 @@ function initUI(){
 }
 
 initUI();
+
+$.setValueText = function(valueText) {
+	$.subtitleLbl.text = valueText;
+};
+$.getValueText = function() {
+	return ($.subtitleLbl.text);
+};

@@ -33,6 +33,8 @@ function initUI(){
 function showValidationError(){
 	var icon = $.alertIcon.getView();
 	if (OS_ANDROID){
+		Ti.API.debug("icona validazione");
+		icon.opacity = 0.90;
 		icon.show();
 	}else{
 		Animations.fadeIn(icon);
@@ -43,6 +45,7 @@ function showValidationError(){
 function hideValidationError(){
 	var icon = $.alertIcon.getView();
 	if (OS_ANDROID){
+		icon.opacity = 0;
 		icon.hide();
 	}else{
 		Animations.fadeOut(icon);

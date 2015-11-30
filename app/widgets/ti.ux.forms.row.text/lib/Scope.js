@@ -126,6 +126,6 @@ function setTypeUrl(control){
 
 function setTypeNumber(control){
 	control.keyboardType = KEYBOARD_NUMBERS_PUNCTUATION;
-	control.validate = validators.url;
+	control.validate = validators.number;
 }
 
